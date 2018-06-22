@@ -3,11 +3,35 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Adam's Homepage</title>
+
+	<style>
+		a.leftside {
+			color: black;
+			font-family: "Courier New", Courier, monospace;
+			font-size: 1.5em;
+		}
+
+		a.leftside:link {
+    		text-decoration: none;
+		}
+
+		a.leftside:visited {
+		    text-decoration: none;
+		}
+
+		a.leftside:hover {
+		    text-decoration: underline;
+		    font-weight: bold;
+		}
+
+		a.leftside:active {
+		    text-decoration: underline;
+		}
+	</style>
 </head>
 
 <body style="background:#e6f2ff;">
-	<script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=64725cfdf814291920468d853fb73d8bbdbbcce3'>
-	</script>
+	<script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=64725cfdf814291920468d853fb73d8bbdbbcce3'></script>
 	<!--
 	<script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/381262/t/5"></script>
 	-->
@@ -22,16 +46,17 @@
 			I'm currently working on this site. Check back later!
 		</p>
 	</div>
-	<!--
-	<div style="float:left; height:100vh; width:150px; padding-left:10px; background-color:white">
+	
+	<div style="float:left; height:100vh; width:150px; padding-left:10px;">
 		<p>
-			<a href="/bio">Bio</a><br>
-			<a href="/blog">Blog</a><br>
-			<a href="/portfolio">Portfolio</a><br>
-			<a href="/resume">Resume</a><br>
+			<a class="leftside" href="/">Home</a><br>
+			<a class="leftside" href="/blog">Blog</a><br>
+			<a class="leftside" href="/portfolio">Portfolio</a><br>
+			<a class="leftside" href="/resume">Resume</a><br>
 		</p>
 	</div>
 
+	<!--
 	<div>
 		<canvas id="myCanvas" width="500" height="500" onmousemove ="myFunc(event)" onclick ="myFunc3(event)">
 		Your browser does not support the HTML5 canvas tag.
