@@ -12,6 +12,14 @@
 	<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
 
 	<style>
+		p.header {
+			color: black;
+			font-family: "Courier New", Courier, monospace;
+			font-size: 4em;
+			font-weight: bold;
+			text-decoration: underline;
+		}
+
 		cur_page {
 			color: grey;
 			font-family: "Courier New", Courier, monospace;
@@ -44,15 +52,48 @@
 	</style>
 </head>
 
-<body style="background:#e6f2ff;">
+<body style="background:#e6f2ff; padding-top:1%; margin:0;">
+
+	<div style="padding-left:1%;">
+
+		<div>
+			<p class="header" style="margin:0;">
+				<img src="me.png" style="border-radius:50%; max-width:7.5%; vertical-align:middle; margin-right:1%;">Adam Clark
+			</p>
+		</div>
+
+		<div style="float:left; height:100vh; width:150px;">
+			<p>
+				<cur_page>Home</cur_page><br>
+				<a class="leftside" href="/bio">Bio</a><br>
+				<a class="leftside" href="/blog">Blog</a><br>
+				<a class="leftside" href="/portfolio">Portfolio</a><br>
+				<a class="leftside" href="/resume">Resume</a><br>
+			</p>
+		</div>
+
+		<div>		
+			<p>This site is currently a work in progress, please check back later!</p>
+		</div>
+
+	</div>
+
 	<!--
-	<script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=64725cfdf814291920468d853fb73d8bbdbbcce3'></script>
-	
-	<script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/381262/t/5"></script>
+	<div>
+		<canvas id="myCanvas" width="500" height="500" onmousemove ="myFunc(event)" onclick ="myFunc3(event)">
+		Your browser does not support the HTML5 canvas tag.
+		</canvas>
+	</div>
 	-->
 
-	<div>
-		<img src="logo.gif" alt="Sick Logo">
+	<!-- <img src="logo.gif" alt="Sick Logo"> -->
+	<!-- <img src="me.png" alt="a picture of me" style="border-radius:50%"> -->
+
+	<!--
+
+	<div style="padding-left:10px; float:none">
+		<img src="me.png" style="max-width:5%; border-radius:50%; float:left; margin-right:1%;">
+		<p class="header">Adam Clark</p>
 	</div>
 	
 	<div style="float:left; height:100vh; width:150px; padding-left:10px;">
@@ -65,20 +106,14 @@
 		</p>
 	</div>
 
-	<div>
-		<img src="me.png" alt="a picture of me" style="border-radius:50%">
+	<div>		
 		<p>
 			This site is currently a work in progress, please check back later!
 		</p>
 	</div>
 
-	<!--
-	<div>
-		<canvas id="myCanvas" width="500" height="500" onmousemove ="myFunc(event)" onclick ="myFunc3(event)">
-		Your browser does not support the HTML5 canvas tag.
-		</canvas>
-	</div>
 	-->
+	
 </body>
 
 </html>
