@@ -19,6 +19,32 @@
 			text-decoration: underline;
 		}
 
+		div.photo {
+			background-color:#fffff9;
+			float:left;
+			margin-right:1%;
+			padding-bottom:5%;
+			padding-left:1%;
+			padding-right:1%;
+			padding-top:1%;
+			max-height:20%;
+			max-width:20%;
+			box-shadow: 5px 5px 10px #888888;
+		}
+
+		div.smallphoto {
+			background-color:#fffff9;
+			float:left;
+			margin-right:.5%;
+			padding-bottom:2.5%;
+			padding-left:.5%;
+			padding-right:.5%;
+			padding-top:.5%;
+			max-height:10%;
+			max-width:10%;
+			box-shadow: 2.5px 2.5px 10px #888888;
+		}
+
 		cur_page {
 			color: grey;
 			font-family: "Courier New", Courier, monospace;
@@ -72,13 +98,13 @@
 		</div>
 
 		<div>	
-			<div style="background-color:white; float:left; margin-right:1%; padding-bottom:5%; padding-left:1%; padding-right:1%; padding-top:1%; max-height:20%; max-width:20%">
-				<img src="me.png" alt="a picture of me" style="max-width:100%; border-radius:1%;">
+			<div class="photo">
+				<img src="spacejam.jpg" alt="a picture of me" style="max-width:100%; border-radius:1%;">
 			</div>
 
 			<div>
-				<p>Hi, I'm Adam and I like video games and my dog Luke (Skywalker).</p>
-				<div style="background-color:white; float:left; margin-right:1%; padding-bottom:2.5%; padding-left:.5%; padding-right:.5%; padding-top:.5%; max-height:10%; max-width:10%">
+				<p style="float:left;">Hi, I'm Adam and I like video games and my dog Luke (Skywalker).</p>
+				<div class="smallphoto" style="margin-left:.5%; margin-right:.5%; margin-bottom:.5%;">
 					<img src="luke.jpg" alt="a picture of my dog luke" style="max-width:100%; border-radius:1%;">
 				</div>
 			</div>
