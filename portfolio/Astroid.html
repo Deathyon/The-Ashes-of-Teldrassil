@@ -32,21 +32,31 @@
 		}
 
 		a.leftside:link {
-    		text-decoration: none;
+    	text-decoration: none;
 		}
 
 		a.leftside:visited {
-		    text-decoration: none;
+		   text-decoration: none;
 		}
 
 		a.leftside:hover {
-		    text-decoration: underline;
-		    font-weight: bold;
+		   text-decoration: underline;
+		   font-weight: bold;
 		}
 
 		a.leftside:active {
-		    text-decoration: underline;
+		   text-decoration: underline;
 		}
+
+		.row {
+    	display: flex;
+		}
+		.column {
+	    flex: 50%;
+	    padding-right: 1vw;
+			padding-bottom: 1vw;
+		}
+
 	</style>
 </head>
 
@@ -60,7 +70,7 @@
 			</p>
 		</div>
 
-		<div style="float:left; height:100vh; width:150px;">
+		<div style="float:left; height:1000vh; width:150px;">
 			<p>
 				<a class="leftside" href="/">Home</a><br>
 				<a class="leftside" href="/bio">Bio</a><br>
@@ -83,43 +93,79 @@
 			</br>
 		</div>
 
-		<div>
+		<div class="row">
+		  <div class="column">
+				<h3>Selecting and uploading patient files.</h3>
+				</br>
+				<a href="/upload_navigate.png"><img src="upload_navigate.png" style="max-width:40vw; max-height:40vh;"></a>
+		  </div>
+		  <div class="column">
+				<h3>Importing a treatment plan.</h3>
+				</br>
+				<img src="adaptive_planning_import.png" style="max-width:40vw; max-height:40vh;">
+		  </div>
+		</div>
+
+		<div class="row">
+			<div class="column">
+				<h3>Creating a new plan.</h3>
+				</br>
+				<img src="creating_plan_1.png" style="max-width:40vw; max-height:40vh;">
+			</div>
+			<div class="column">
+				<h3>Adding prescriptions to a new plan.</h3>
+				</br>
+				<img src="creating_plan_prescription.png" style="max-width:40vw; max-height:40vh;">
+			</div>
+		</div>
+
+		<div class="row">
+		  <div class="column">
+				<h3>Plan history and revisions list.</h3>
+				</br>
+				<img src="plan_history_history_list.png" style="max-width:40vw; max-height:40vh;">
+		  </div>
+		  <div class="column">
+				<h3>Creating a new structure.</h3>
+				</br>
+				<img src="create_structures_type.png" style="max-width:40vw; max-height:40vh;">
+		  </div>
+		</div>
+
+
+			<!--
+
+			</br>
 			<p>
-				<img src="upload_navigate.png">
-				</br>Selecting and uploading patient files.
+				Creating a new plan.</br>
+				<img src="creating_plan_1.png" style="max-width:40%; max-height:40%; float:left; padding-right:5%">
 			</p>
+			</br>
 			<p>
-				<img src="adaptive_planning_import.png">
-				</br>Importing a treatment plan.
+				Adding prescriptions to a new plan.</br>
+				<img src="creating_plan_prescription.png" style="max-width:40%; max-height:40%; float:left; padding-right:5%">
 			</p>
+			</br>
 			<p>
-				<img src="adaptive_planning_import.png">
-				</br>Importing a treatment plan.
+				Plan history and revisions lists.</br>
+				<img src="plan_history_history_list.png" style="max-width:40%; max-height:40%; float:left; padding-right:5%">
 			</p>
+			</br>
 			<p>
-				<img src="creating_plan_1.png">
-				</br>Creating a new plan.
+				Creating a new structure.</br>
+				<img src="create_structures_type.png" height=auto; max-width=30%;>
 			</p>
+			</br>
 			<p>
-				<img src="creating_plan_prescriptions.png">
-				</br>Adding prescriptions to a new plan.
+				Editing a fraction group.</br>
+				<img src="fraction_groups_simple_1.png" height=auto; max-width=30%;>
 			</p>
+			</br>
 			<p>
-				<img src="plan_history_history_list.png">
-				</br>Plan history and revisions lists.
+				Exporting files.</br>
+				<img src="export_custom.png" height=auto; max-width=30%; style="float:left;">
 			</p>
-			<p>
-				<img src="create_structures_type.png">
-				</br>Creating a new structure.
-			</p>
-			<p>
-				<img src="fraction_groups_simple_1.png">
-				</br>Editing a fraction group.
-			</p>
-			<p>
-				<img src="export_custom.png">
-				</br>Exporting files.
-			</p>
+			-->
 		</div>
 
 	</div>
