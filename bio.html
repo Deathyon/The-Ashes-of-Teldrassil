@@ -27,8 +27,8 @@
 			padding-left:1%;
 			padding-right:1%;
 			padding-top:1%;
-			max-height:20%;
-			max-width:20%;
+			max-height:50%;
+			max-width:50%;
 			box-shadow: 5px 5px 10px #888888;
 			border-radius:.5%;
 		}
@@ -37,12 +37,36 @@
 			background-color:#fffff9;
 			float:left;
 			margin-right:.5%;
-			padding-bottom:2.5%;
+			padding-bottom:5%;
 			padding-left:.5%;
 			padding-right:.5%;
 			padding-top:.5%;
-			max-height:10%;
-			max-width:10%;
+			max-height:25%;
+			max-width:25%;
+			box-shadow: 2.5px 2.5px 10px #888888;
+		}
+
+		div.photo2 {
+			background-color:#fffff9;
+			float:left;
+			margin-right:1%;
+			padding-bottom:5%;
+			padding-left:1%;
+			padding-right:1%;
+			padding-top:1%;
+			width:50%;
+			box-shadow: 5px 5px 10px #888888;
+			border-radius:.5%;
+		}
+
+		div.smallphoto2 {
+			background-color:#fffff9;
+			float:left;
+			margin-right:.5%;
+			padding-bottom:5%;
+			padding-left:.5%;
+			padding-right:.5%;
+			padding-top:.5%;
 			box-shadow: 2.5px 2.5px 10px #888888;
 		}
 
@@ -75,6 +99,16 @@
 		a.leftside:active {
 		    text-decoration: underline;
 		}
+
+		.row {
+    	display: flex;
+		}
+		.column {
+	    flex: 50%;
+	    padding-right: 1vw;
+			padding-bottom: 1vw;
+		}
+
 	</style>
 </head>
 
@@ -103,17 +137,34 @@
 				<p style="float:left;">Hi, I'm Adam and I like video games and my dog Luke (Skywalker).</p>
 				</br>
 				</br>
-				<div class="photo">
-					<img src="spacejam.jpg" alt="a picture of me" style="max-width:100%; border-radius:1%;">
+				<div class="row">
+					<div class="column">
+						<div class="photo2">
+							<img src="spacejam.jpg" alt="a picture of me" style="max-height:100%; max-width:100%; border-radius:1%;">
+						</div>
+					</div>
+
+					<div class="column">
+						<div class="photo2" style="margin-left:.5%; margin-right:.5%; margin-bottom:.5%;">
+							<img src="luke.jpg" alt="a picture of my dog luke" style="max-width:100%; max-height:100%; border-radius:1%;">
+						</div>
+					</div>
 				</div>
-				<div class="smallphoto" style="margin-left:.5%; margin-right:.5%; margin-bottom:.5%;">
-					<img src="luke.jpg" alt="a picture of my dog luke" style="max-width:100%; border-radius:1%;">
-				</div>
-				<div class="photo">
-					<img src="lasvegas.jpg" alt="a picture of me and my girlfriend erika" style="max-width:100%; border-radius:1%;">
-				</div>
-				<div class="photo">
-					<img src="me2.jpg" alt="a picture of me" style="max-width:100%; border-radius:1%;">
+				</br>
+				<p style="float:left;">I recently moved from Orlando, Florida to Colorado with my girlfriend Erika!</p>
+				</br>
+				</br>
+				<div class="row">
+					<div class="column">
+						<div class="photo2">
+							<img src="lasvegas.jpg" alt="a picture of me and my girlfriend erika" style="max-height:100%; max-width:100%; border-radius:1%;">
+						</div>
+					</div>
+					<div class="column">
+						<div class="photo2">
+							<img src="me2.jpg" alt="a picture of me" style="max-height:100%; max-width:100%; border-radius:1%;">
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
