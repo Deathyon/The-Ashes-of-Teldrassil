@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Resume</title>
+
+	<style>
+		p {
+			margin:0;
+		}
+
+		p.header {
+			margin:0;
+			color: black;
+			font-family: "Courier New", Courier, monospace;
+			font-size: 4em;
+			font-weight: bold;
+			text-decoration: underline;
+		}
+
+		cur_page {
+			color: grey;
+			font-family: "Courier New", Courier, monospace;
+			font-size: 1.5em;
+			font-weight: bold;
+		}
+
+		a.leftside {
+			color: black;
+			font-family: "Courier New", Courier, monospace;
+			font-size: 1.5em;
+		}
+
+		a.leftside:link {
+    		text-decoration: none;
+		}
+
+		a.leftside:visited {
+		    text-decoration: none;
+		}
+
+		a.leftside:hover {
+		    text-decoration: underline;
+		    font-weight: bold;
+		}
+
+		a.leftside:active {
+		    text-decoration: underline;
+		}
+	</style>
+</head>
+
+<body style="background:#e6f2ff; padding-top:1%; margin:0;">
+
+	<div style="padding-left:1%;">
+
+		<div style="margin-bottom:1%;">
+			<p class="header">
+				<img src="me.png" style="border-radius:50%; max-width:7.5%; vertical-align:middle; margin-right:1%;">Adam Clark
+			</p>
+		</div>
+
+		<div style="float:left; height:100vh; width:150px;">
+			<p>
+				<a class="leftside" href="/">Home</a><br>
+				<a class="leftside" href="/bio">Bio</a><br>
+				<a class="leftside" href="/blog">Blog</a><br>
+				<a class="leftside" href="/portfolio">Portfolio</a><br>
+				<cur_page>Resume</cur_page>
+			</p>
+		</div>
+
+		<div>
+			<object data="resume.pdf" border="0" style="height:90vh; width:77vh"></object>
+		</div>
+
+	</div>
+
+</body>
+
+</html>
