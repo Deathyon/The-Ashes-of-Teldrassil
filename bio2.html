@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="UTF-8">
+	<title>Bio</title>
+
+	<!--
+	<link rel="stylesheet" href="styles.css">
+	-->
+
+	<style>
+		p {
+			margin:0;
+			font-family: "Courier New", Courier, monospace;
+		}
+
+		p.header {
+			margin:0;
+			color: black;
+			font-family: "Courier New", Courier, monospace;
+			font-size: 4em;
+			font-weight: bold;
+			text-decoration: underline;
+			padding-top:1%;
+		}
+
+		div.photo {
+			background-color:#fffff9;
+			padding-bottom:20%;
+			padding-left:2%;
+			padding-right:2%;
+			padding-top:2%;
+			margin-left:5%;
+			margin-right:5%;
+			box-shadow: 5px 5px 10px #888888;
+			border-radius:.5%;
+		}
+
+		cur_page {
+			color: grey;
+			font-family: "Courier New", Courier, monospace;
+			font-size: 1.5em;
+			font-weight: bold;
+		}
+
+		a.leftside {
+			color: black;
+			font-family: "Courier New", Courier, monospace;
+			font-size: 1.5em;
+		}
+
+		a.leftside:link {
+    		text-decoration: none;
+		}
+
+		a.leftside:visited {
+		    text-decoration: none;
+		}
+
+		a.leftside:hover {
+		    text-decoration: underline;
+		    font-weight: bold;
+		}
+
+		a.leftside:active {
+		    text-decoration: underline;
+		}
+
+		.row {
+    	display: flex;
+		}
+		.column {
+	    flex: 50%;
+	    padding-right: 1vw;
+			padding-bottom: 1vw;
+		}
+
+	</style>
+</head>
+
+<body style="background:#e6f2ff; margin:0;">
+
+	<div style="margin-bottom:1%;">
+		<img src="me.png" style="float:left; border-radius:50%; max-width:7.5%; vertical-align:middle; margin:1%;">
+		<p class="header">
+			Adam Clark
+		</p>
+		<p>
+			Artist / Designer / Programmer
+		</p>
+	</div>
+
+	<div style="padding:1%; display:flex; clear:both;">
+
+		<!-- LEFT SIDE CONTROLS -->
+		<div style="flex:1%">
+			<p>
+				<a class="leftside" href="/">Home</a><br>
+				<cur_page>Bio</cur_page><br>
+				<a class="leftside" href="/blog">Blog</a><br>
+				<a class="leftside" href="/portfolio">Portfolio</a><br>
+				<a class="leftside" href="/resume">Resume</a><br>
+			</p>
+		</div>
+
+		<!-- MAIN PAGE -->
+		<div style="flex:99%">
+
+			<div style="display:flex; padding-left:5%; padding-right:5%;">
+				<div style="flex:30%">
+					<div class="photo">
+						<img src="spacejam.jpg" alt="a picture of me" style="max-width:100%; border-radius:1%;">
+					</div>
+				</div>
+				<div style="flex:60%">
+					<p>
+						Hi, I'm Adam and I'm a developer in Colorado with a passion for design and creation. Since I was a kid I have always loved video games, drawing, and designing. When I was younger I would create and script maps for Starcraft, draw characters and comics, and create backgrounds for my desktop or myspace page.
+					</p>
+					</br>
+					</br>
+					<p>
+						Now I have taken all of those same skills to the next level as a professional who has experience: designing and programming PC games in Unreal Engine 4 or Unity3D, designing UI/UX and writing C++ code for professional software, and creating web pages and book/movie covers.
+					</p>
+					</br>
+					</br>
+					<p>
+						I recently moved from Orlando, Florida to Colorado with my girlfriend, Erika and we are both loving the Colorado climate. I am also working on a mobile game in Unity that brings back the nostalgia of digital pets from the '90s and playing a lot of Destiny 2 on PS4!
+					</p>
+				</div>
+				<div style="flex:10%">
+					<div class="photo">
+						<img src="luke.jpg" alt="a picture of me" style="max-width:100%; border-radius:1%;">
+					</div>
+					</br>
+					<div class="photo">
+						<img src="sprucemtn.jpg" alt="a picture of me" style="max-width:100%; border-radius:1%;">
+					</div>
+					</br>
+					<div class="photo">
+						<img src="me2.jpg" alt="a picture of me" style="max-width:100%; border-radius:1%;">
+					</div>
+				</div>
+			</div>
+
+			<!--
+			<div style="width:30%;">
+				<div class=photo>
+					<img src="spacejam.jpg" alt="a picture of me" style="max-width:100%; border-radius:1%;">
+				</div>
+			</div>
+			<div style="width:50%;">
+				<p>
+					Hi, I'm Adam and I like video games and my dog Luke (Skywalker)!
+					</br>
+					I'm a developer in Colorado with a passion for design and creation.
+				</p>
+			</div>
+			<div style="width:10%;">
+				<div class=photo>
+					<img src="luke.jpg" alt="a picture of me" style="max-width:100%; border-radius:1%;">
+				</div>
+			</div>
+			-->
+
+		</div>
+
+	</div>
+
+
+	<!--
+	<div style="padding-left:1%;">
+
+		<div style="float:left; height:100vh; width:150px;">
+
+			<p>
+				<a class="leftside" href="/">Home</a><br>
+				<cur_page>Bio</cur_page><br>
+				<a class="leftside" href="/blog">Blog</a><br>
+				<a class="leftside" href="/portfolio">Portfolio</a><br>
+				<a class="leftside" href="/resume">Resume</a><br>
+			</p>
+
+		</div>
+
+		<div style="width:80vw;">
+
+			<div style="display:flex;">
+				<div style="flex:30%; padding:1vw;">
+					<div class=photo>
+						<img src="spacejam.jpg" alt="a picture of me" style="max-width:100%; border-radius:1%;">
+					</div>
+				</div>
+				<div style="flex:60%; padding:1vw;">
+					<p>
+						Hi, I'm Adam and I like video games and my dog Luke (Skywalker)!
+						</br>
+						I'm a developer in Colorado with a passion for design and creation.
+					</p>
+				</div>
+				<div style="flex:10%; padding:1vw;">
+					<div class=photo>
+						<img src="luke.jpg" alt="a picture of me" style="max-width:100%; border-radius:1%;">
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+	-->
+
+</body>
+
+</html>
