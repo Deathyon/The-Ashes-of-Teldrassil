@@ -5,192 +5,76 @@
 	<meta charset="UTF-8">
 	<title>Bio</title>
 
-	<style>
-		p {
-			margin:0;
-		}
+	<link rel="stylesheet" href="styles.css">
 
-		p.header {
-			margin:0;
-			color: black;
-			font-family: "Courier New", Courier, monospace;
-			font-size: 4em;
-			font-weight: bold;
-			text-decoration: underline;
-		}
-
-		div.photo {
-			background-color:#fffff9;
-			float:left;
-			margin-right:1%;
-			padding-bottom:5%;
-			padding-left:1%;
-			padding-right:1%;
-			padding-top:1%;
-			max-height:50%;
-			max-width:50%;
-			box-shadow: 5px 5px 10px #888888;
-			border-radius:.5%;
-		}
-
-		div.smallphoto {
-			background-color:#fffff9;
-			float:left;
-			margin-right:.5%;
-			padding-bottom:5%;
-			padding-left:.5%;
-			padding-right:.5%;
-			padding-top:.5%;
-			max-height:25%;
-			max-width:25%;
-			box-shadow: 2.5px 2.5px 10px #888888;
-		}
-
-		div.photo2 {
-			background-color:#fffff9;
-			float:left;
-			margin-right:1%;
-			padding-bottom:5%;
-			padding-left:1%;
-			padding-right:1%;
-			padding-top:1%;
-			width:25%;
-			box-shadow: 5px 5px 10px #888888;
-			border-radius:.5%;
-		}
-
-		div.smallphoto2 {
-			background-color:#fffff9;
-			float:left;
-			margin-right:.5%;
-			padding-bottom:5%;
-			padding-left:.5%;
-			padding-right:.5%;
-			padding-top:.5%;
-			box-shadow: 2.5px 2.5px 10px #888888;
-		}
-
-		cur_page {
-			color: grey;
-			font-family: "Courier New", Courier, monospace;
-			font-size: 1.5em;
-			font-weight: bold;
-		}
-
-		a.leftside {
-			color: black;
-			font-family: "Courier New", Courier, monospace;
-			font-size: 1.5em;
-		}
-
-		a.leftside:link {
-    		text-decoration: none;
-		}
-
-		a.leftside:visited {
-		    text-decoration: none;
-		}
-
-		a.leftside:hover {
-		    text-decoration: underline;
-		    font-weight: bold;
-		}
-
-		a.leftside:active {
-		    text-decoration: underline;
-		}
-
-		.row {
-    	display: flex;
-		}
-		.column {
-	    flex: 50%;
-	    padding-right: 1vw;
-			padding-bottom: 1vw;
-		}
-
-	</style>
 </head>
 
-<body style="background:#e6f2ff; padding-top:1%; margin:0;">
+<body style="background:#e6f2ff; margin:0;">
 
-	<div style="padding-left:1%;">
+	<div style="margin-bottom:1%;">
+		<img src="me.png" style="float:left; border-radius:50%; max-width:7.5%; vertical-align:middle; margin:1%;">
+		<p class="header">
+			Adam Clark
+		</p>
+		<p>
+			Artist / Designer / Programmer
+		</p>
+	</div>
 
-		<div style="margin-bottom:1%;">
-			<p class="header">
-				<img src="me.png" style="border-radius:50%; max-width:7.5%; vertical-align:middle; margin-right:1%;">Adam Clark
-			</p>
-		</div>
+	<div style="padding:1%; display:flex; clear:both;">
 
-		<div style="float:left; height:100vh; width:150px;">
+		<!-- LEFT SIDE CONTROLS -->
+		<div style="flex:1%">
 			<p>
 				<a class="leftside" href="/">Home</a><br>
 				<cur_page>Bio</cur_page><br>
-				<a class="leftside" href="/blog">Blog</a><br>
+				<!--<a class="leftside" href="../bio">Bio</a><br>-->
 				<a class="leftside" href="/portfolio">Portfolio</a><br>
 				<a class="leftside" href="/resume">Resume</a><br>
 			</p>
 		</div>
 
-		<div>
+		<!-- MAIN PAGE -->
+		<div style="flex:99%">
 
-
-
-
-			<div>
-				<div class="row">
-					<div class="column">
-						<p>Hi, I'm Adam and I like video games and my dog Luke (Skywalker).</p>
-					</div>
-					<div class="column">
-						<div class="photo2">
-							<img src="spacejam.jpg" alt="a picture of me" style="max-width:100%; border-radius:1%;">
-						</div>
-						<div class="photo2" style="margin-left:.5%; margin-right:.5%; margin-bottom:.5%;">
-							<img src="luke.jpg" alt="a picture of my dog luke" style="max-width:100%; border-radius:1%;">
-						</div>
+			<div style="display:flex; padding-left:5%; padding-right:5%;">
+				<div style="flex:30%">
+					<div class="photo">
+						<img src="spacejam.jpg" alt="a picture of me" style="max-width:100%; border-radius:1%;">
 					</div>
 				</div>
-			</div>
-
-
-
-
-			<div>
-				<p style="float:left;">Hi, I'm Adam and I like video games and my dog Luke (Skywalker).</p>
-				</br>
-				</br>
-				<div class="row">
-					<div class="column">
-						<div class="photo2">
-							<img src="spacejam.jpg" alt="a picture of me" style="max-height:100%; max-width:100%; border-radius:1%;">
-						</div>
-					</div>
-					<div class="column">
-						<div class="photo2" style="margin-left:.5%; margin-right:.5%; margin-bottom:.5%;">
-							<img src="luke.jpg" alt="a picture of my dog luke" style="max-width:100%; max-height:100%; border-radius:1%;">
-						</div>
-					</div>
+				<div style="flex:60%">
+					<p>
+						Hi, I'm Adam and I'm a developer in Colorado with a passion for design and creation. Since I was a kid I have always loved video games, drawing, and designing. When I was younger I would create and script maps for Starcraft, draw characters and comics, and create backgrounds for my desktop or myspace page.
+					</p>
+					</br>
+					</br>
+					<p>
+						Now I have taken all of those same skills to the next level as a professional who has experience: designing and programming PC games in Unreal Engine 4 or Unity3D, designing UI/UX and writing C++ code for professional software, and creating web pages and book/movie covers.
+					</p>
+					</br>
+					</br>
+					<p>
+						I recently moved from Orlando, Florida to Colorado with my girlfriend, Erika and we are both loving the Colorado climate. I am also working on a mobile game in Unity that brings back the nostalgia of digital pets from the '90s and playing a lot of Destiny 2 on PS4!
+					</p>
 				</div>
-				</br>
-				<p style="float:left;">I recently moved from Orlando, Florida to Colorado with my girlfriend Erika!</p>
-				</br>
-				<div class="row">
-					<div class="column">
-						<div class="photo2">
-							<img src="lasvegas.jpg" alt="a picture of me and my girlfriend erika" style="max-height:100%; max-width:100%; border-radius:1%;">
-						</div>
+				<div style="flex:10%">
+					<div class="photo">
+						<img src="luke.jpg" alt="a picture of me" style="max-width:100%; border-radius:1%;">
 					</div>
-					<div class="column">
-						<div class="photo2">
-							<img src="me2.jpg" alt="a picture of me" style="max-height:100%; max-width:100%; border-radius:1%;">
-						</div>
+					</br>
+					<div class="photo">
+						<img src="sprucemtn.jpg" alt="a picture of me" style="max-width:100%; border-radius:1%;">
+					</div>
+					</br>
+					<div class="photo">
+						<img src="me2.jpg" alt="a picture of me" style="max-width:100%; border-radius:1%;">
 					</div>
 				</div>
 			</div>
 		</div>
-
 	</div>
+
 </body>
 
 </html>
