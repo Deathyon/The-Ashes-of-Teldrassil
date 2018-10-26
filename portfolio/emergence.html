@@ -4,76 +4,57 @@
 	<meta charset="UTF-8">
 	<title>Portfolio</title>
 
-	<style>
-		p {
-			margin:0;
-		}
+	<link rel="stylesheet" href="../styles.css">
 
-		p.header {
-			margin:0;
-			color: black;
-			font-family: "Courier New", Courier, monospace;
-			font-size: 4em;
-			font-weight: bold;
-			text-decoration: underline;
-		}
-
-		cur_page {
-			color: grey;
-			font-family: "Courier New", Courier, monospace;
-			font-size: 1.5em;
-			font-weight: bold;
-		}
-
-		a.leftside {
-			color: black;
-			font-family: "Courier New", Courier, monospace;
-			font-size: 1.5em;
-		}
-
-		a.leftside:link {
-    		text-decoration: none;
-		}
-
-		a.leftside:visited {
-		    text-decoration: none;
-		}
-
-		a.leftside:hover {
-		    text-decoration: underline;
-		    font-weight: bold;
-		}
-
-		a.leftside:active {
-		    text-decoration: underline;
-		}
-	</style>
 </head>
 
-<body style="background:#e6f2ff; padding-top:1%; margin:0;">
+<body style="background:#e6f2ff; margin:0;">
 
-	<div style="padding-left:1%;">
+	<div style="margin-bottom:1%;">
+		<img src="../me.png" style="float:left; border-radius:50%; max-width:7.5%; vertical-align:middle; margin:1%;">
+		<p class="header">
+			Adam Clark
+		</p>
+		<p>
+			Artist / Designer / Programmer
+		</p>
+	</div>
 
-		<div style="margin-bottom:1%;">
-			<p class="header">
-				<img src="../me.png" style="border-radius:50%; max-width:7.5%; vertical-align:middle; margin-right:1%;">Adam Clark
-			</p>
-		</div>
+	<div style="padding:1%; display:flex; clear:both;">
 
-		<div style="float:left; height:100vh; width:150px;">
+		<!-- LEFT SIDE CONTROLS -->
+		<div style="flex:1%">
 			<p>
-				<a class="leftside" href="/">Home</a><br>
-				<a class="leftside" href="/bio">Bio</a><br>
-				<a class="leftside" href="/blog">Blog</a><br>
+				<a class="leftside" href="../">Home</a><br>
+				<a class="leftside" href="../bio">Bio</a><br>
+				<!--<a class="leftside" href="../blog">Blog</a><br>-->
 				<cur_page>Portfolio</cur_page><br>
-				<a class="leftside" href="/resume">Resume</a><br>
+				<a class="leftside" href="../resume">Resume</a><br>
 			</p>
 		</div>
 
-		<div>
-			<p>
-				Emergence
-			</p>
+		<!-- MAIN PAGE -->
+		<div style="flex:99%">
+			<div style="display:flex; padding-left:5%; padding-right:5%;">
+
+
+				<div style="height:100; overflow:scroll;">
+					<div>
+						<h1>Emergence</h1>
+						</br>
+						<p>Astroid is a cutting edge proton radiation therapy planning system. It is the only FDA aproved radiation therapy planning system to take advantage of microservices and cloud computing to run the extremely complex calculations required for treatment planning. This empowers users to work from virtually anywhere with an internet connection.</p>
+						</br>
+						<p>As a software developer at .decimal, I simultaneously designed, programmed, and implemented UI/UX elements for Astroid. On a daily basis, I wrote, reviewed, and maintained C++ code. I worked inside of an agile environment utilzing tools such as JIRA, Visual Studio, Git, and Jenkins, among others.</p>
+						</br>
+						<p>Astroid consists of several applications working together to deliver the most advanced proton therapy planning system to date. On the backend, the Thinknode app handles requests for the Planning app and delivers calculation results as well as maintains an immutable database of patient records. The Planning app is where users will upload, search for, and create patient data and treatment plans. From the Planning app, users will then export published data to the MAIA app where it is QA'd prior to the patient recieving treatment.</p>
+						</br>
+						<p>Below are some screenshots taken from the Planning app user guide which show a few of the areas of the UI that I personaly designed and programmed.</p>
+						</br>
+					</div>
+				</div>
+
+
+			</div>
 		</div>
 
 	</div>
